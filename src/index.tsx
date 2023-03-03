@@ -8,12 +8,13 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const darkTheme = {
-  textColor : 'white'
+const basicTheme = {
+  textColor : 'white',
+  bgColor : "transparent"
 }
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={basicTheme}>
       <App />
     </ThemeProvider>
   </React.StrictMode>
