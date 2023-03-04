@@ -4,17 +4,17 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-  return (
-    <Wrap>
-        <Container>
-            <Nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                </ul>
-            </Nav>
-        </Container>
-    </Wrap>
-  )
+    return (
+        <Wrap>
+            <Container>
+                <Nav>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                    </ul>
+                </Nav>
+            </Container>
+        </Wrap>
+    )
 }
 
 const Wrap = styled.header`
@@ -32,7 +32,7 @@ const Container = styled.div`
 `
 
 const Nav = styled.nav`
-    background-color: red;
+    background-color: ${props => props.theme.bgColor};
 `
 
 export default Header
